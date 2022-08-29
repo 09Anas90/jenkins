@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodejs
-        image: pineapple/nodejs
+        image: 09pineapple90/nodejs
         ports:
         - containerPort: 80
