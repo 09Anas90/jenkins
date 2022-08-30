@@ -2,17 +2,6 @@ pipeline {
     agent any
 environment {
     def kubeConfig="C:\\ProgramData\\Jenkins\\.jenkins\\.kube\\config"
-    def getOs(){
-    String osname = System.getProperty('os.name');
-    if (osname.startsWith('Windows'))
-        return 'windows';
-    else if (osname.startsWith('Mac'))
-        return 'macosx';
-    else if (osname.contains('nux'))
-        return 'linux';
-    else
-        throw new Exception("Unsupported os: ${osname}");
-}
 }
     stages {
         stage('Hello') {
