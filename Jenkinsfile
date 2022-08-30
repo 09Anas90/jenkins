@@ -2,6 +2,7 @@ pipeline {
     agent any
 environment {
     def kubeConfig="C:\\ProgramData\\Jenkins\\.jenkins\\.kube\\config"
+    import org.apache.commons.lang.SystemUtils
 }
     stages {
         stage('Hello') {
